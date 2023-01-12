@@ -33,7 +33,7 @@ import {
 } from './gem-farm.pda';
 
 export const feeAccount = new PublicKey(
-  'LoStfYVjPsXaSqrCroU6NySsy2fy1wTviUzmGRHtr2s'
+  'stonezEk3bTV6VtQzwY4epvdDpiK21vnNqZKP7BZjJo'
 );
 
 //acts as an enum

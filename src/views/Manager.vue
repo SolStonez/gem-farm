@@ -3,12 +3,12 @@
   <div v-if="!wallet" class="text-center">Pls connect (burner) wallet</div>
   <div v-else>
     <div class="flex mb-10 w-full justify-center">
-      <button
+      <!-- <button
         class="nes-btn is-primary mr-5"
         @click="showNewFarm = !showNewFarm"
       >
         New farm
-      </button>
+      </button> -->
       <button class="nes-btn" @click="refreshFarms">Refetch farms</button>
     </div>
 
@@ -31,28 +31,28 @@
             </option>
           </select>
         </div>
-        <FarmDisplay :key="farmAcc" :farmAcc="farmAcc" />
+        <!-- <FarmDisplay :key="farmAcc" :farmAcc="farmAcc" /> -->
       </div>
       <!--update farm-->
-      <UpdateFarm :farm="farm" @update-farm="handleUpdateFarm" class="mb-10" />
+      <!-- <UpdateFarm :farm="farm" @update-farm="handleUpdateFarm" class="mb-10" /> -->
       <!--manage NFT types-->
-      <TheWhitelist
+      <!-- <TheWhitelist
         :key="farmAcc.bank"
         :farm="farm"
         :bank="farmAcc.bank.toBase58()"
         class="mb-10"
-      />
+      /> -->
       <!--manage funders-->
-      <AuthorizeFunder :key="farm" :farm="farm" class="mb-10" />
+      <!-- <AuthorizeFunder :key="farm" :farm="farm" class="mb-10" /> -->
       <!--manage funding-->
-      <FundCancelLock
+      <!-- <FundCancelLock
         :farm="farm"
         :farmAcc="farmAcc"
         class="mb-10"
         @update-farm="handleUpdateFarm"
-      />
+      /> -->
       <!--refresh farmer-->
-      <RefreshFarmer :farm="farm" class="mb-10" />
+      <!-- <RefreshFarmer :farm="farm" class="mb-10" /> -->
       <!--treasury payout-->
       <TreasuryPayout :key="farmAcc" :farm="farm" class="mb-10" />
     </div>
